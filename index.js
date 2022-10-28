@@ -1,5 +1,5 @@
 var crypto 		= require("crypto"),
-	querystring = require("querystring");
+	querystring = require('query-string');
 
 (function() {
 	"use strict";
@@ -13,7 +13,7 @@ var crypto 		= require("crypto"),
 	
 	discourse_sso.prototype.validate = function(payload, sig) {
 		var hmac = this.getHmac();
-		hmac.update(querystring.unescape(payload));
+		hmac.update(decodeURI(payload));
 		if(hmac.digest("hex") === sig) {
 			return true;
 		} else {
@@ -23,7 +23,7 @@ var crypto 		= require("crypto"),
 	
 	discourse_sso.prototype.getNonce = function(payload) {
 		var q = querystring.parse(
-			Buffer.from( querystring.unescape(payload) , 'base64').toString()
+			Buffer.from( decodeURI(payload) , 'base64').toString()
 		);
 		if("nonce" in q) {
 			return q["nonce"];
