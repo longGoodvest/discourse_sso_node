@@ -1,16 +1,8 @@
 {
 	"name": "@long/discourse-sso",
-	"preferGlobal": false,
 	"version": "1.0.6",
-	"author": "Johan Jatko <johan.jatko@outlook.com>",
 	"description": "Single-sign-on helper package for Discourse",
 	"license" : "MIT",
-	"contributors": [
-		{
-			"name": "Johan Jatko",
-			"email": "johan.jatko@outlook.com"
-		}
-	],
 	"scripts": {
 		"test": "node test.js"
 	},
