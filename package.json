@@ -1,7 +1,7 @@
 {
-	"name": "discourse-sso",
+	"name": "sso-disc",
 	"version": "1.1.0",
-	"description": "Single-sign-on helper package for Discourse",
+	"description": "sso discourse",
 	"license" : "MIT",
 	"scripts": {
 		"test": "node test.js"
