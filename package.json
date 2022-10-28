@@ -1,5 +1,5 @@
 {
-	"name": "@long/discourse-sso",
+	"name": "@longGoodvest/discourse-sso",
 	"version": "1.0.6",
 	"description": "Single-sign-on helper package for Discourse",
 	"license" : "MIT",
